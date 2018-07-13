@@ -1,0 +1,31 @@
+{
+  "name": "github-is-starred",
+  "version": "0.0.0",
+  "description": "Checks if a user has starred a particular GitHub repo.",
+  "main": "index.js",
+  "repository": "transitive-bullshit/github-is-starred",
+  "author": "Travis Fischer <travis@automagical.ai>",
+  "license": "MIT",
+  "reveal": true,
+  "scripts": {
+    "docs": "update-markdown-jsdoc --no-markdown-toc",
+    "test": "ava -v && standard *.js"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "github",
+    "star",
+    "repo"
+  ],
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "standard": "^11.0.0",
+    "update-markdown-jsdoc": "^1.0.6"
+  },
+  "dependencies": {
+    "@octokit/rest": "^15.9.4",
+    "ow": "^0.6.0"
+  }
+}
