@@ -22,10 +22,10 @@
   "devDependencies": {
     "ava": "^0.25.0",
     "standard": "^11.0.0",
-    "update-markdown-jsdoc": "^1.0.6"
+    "update-markdown-jsdoc": "^1.0.11"
   },
   "dependencies": {
-    "@octokit/rest": "^15.9.4",
+    "@octokit/rest": "^16.34.0",
     "ow": "^0.6.0"
   }
 }

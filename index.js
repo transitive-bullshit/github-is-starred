@@ -30,7 +30,7 @@ module.exports = async (opts) => {
   let perPage = 100
 
   do {
-    const { data } = await client.activity.getStarredReposForUser({
+    const { data } = await client.activity.listReposStarredByUser({
       username,
       page,
       per_page: perPage
@@ -38,7 +38,7 @@ module.exports = async (opts) => {
 
     if (!data || !data.length) break
 
-    const repos = new Set(data.map((r) => r.repo.full_name))
+    const repos = new Set(data.map((r) => r.full_name))
     if (repos.has(repo)) return true
 
     ++page
